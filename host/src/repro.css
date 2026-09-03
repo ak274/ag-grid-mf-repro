@@ -1,0 +1,161 @@
+:root {
+  color: #e7edf7;
+  background: #0d1420;
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  border: 0;
+  text-align: left;
+}
+
+code {
+  color: #8ee8c6;
+  font-family: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 56px clamp(20px, 6vw, 96px) 80px;
+  background:
+    linear-gradient(135deg, rgba(38, 86, 126, 0.22), transparent 42%),
+    #0d1420;
+}
+
+.header,
+.panel {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #72b8d8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 760px;
+  margin-bottom: 16px;
+  color: #f4f7fb;
+  font-family: Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #f4f7fb;
+  font-family: Georgia, serif;
+  font-size: clamp(1.4rem, 2.6vw, 2.2rem);
+  font-weight: 400;
+}
+
+.intro {
+  max-width: 700px;
+  margin-bottom: 0;
+  color: #aebbc9;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.status,
+.chip {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  border: 1px solid #2b765f;
+  border-radius: 999px;
+  color: #8ee8c6;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+
+.panel {
+  overflow: hidden;
+  border: 1px solid #2a3b4f;
+  border-radius: 8px;
+  background: #121d2b;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #2a3b4f;
+  padding: 24px 28px;
+}
+
+.chip {
+  border-color: #36536c;
+  color: #aebbc9;
+  font-family: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.loading {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  color: #aebbc9;
+}
+
+@media (max-width: 680px) {
+  .page {
+    padding: 32px 16px 48px;
+  }
+
+  .header,
+  .panel-heading {
+    flex-direction: column;
+  }
+
+  .header {
+    margin-bottom: 28px;
+  }
+
+  .panel-heading {
+    padding: 20px;
+  }
+}

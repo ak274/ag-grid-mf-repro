@@ -1,0 +1,53 @@
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-quartz.css';
+
+.remote-content {
+  padding: 28px;
+}
+
+.remote-copy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.remote-copy p {
+  max-width: 720px;
+  margin: 0;
+  color: #aebbc9;
+  line-height: 1.6;
+}
+
+.remote-copy code {
+  color: #8ee8c6;
+  font-family: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.badge {
+  flex: 0 0 auto;
+  border: 1px solid #36536c;
+  border-radius: 999px;
+  color: #aebbc9;
+  font-family: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.75rem;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.grid {
+  width: 100%;
+  min-height: 320px;
+}
+
+@media (max-width: 680px) {
+  .remote-content {
+    padding: 20px;
+  }
+
+  .remote-copy {
+    flex-direction: column;
+  }
+}

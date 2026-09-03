@@ -1,0 +1,15 @@
+{
+  "name": "ag-grid-mf-repro",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@11.22.0",
+  "scripts": {
+    "build:host": "pnpm --dir host build",
+    "build:remote": "pnpm --dir remote build",
+    "lint:host": "pnpm --dir host lint",
+    "lint:remote": "pnpm --dir remote lint",
+    "reproduce": "node scripts/reproduce.mjs",
+    "dev:host": "pnpm --dir host dev --host 127.0.0.1",
+    "dev:remote": "pnpm --dir remote dev --host 127.0.0.1"
+  }
+}
