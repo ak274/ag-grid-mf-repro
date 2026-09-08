@@ -21,7 +21,9 @@ export default defineConfig({
         'ag-grid-community': {
           singleton: true,
           import: false,
-          requiredVersion: '^36.1.0',
+          requiredVersion: false,
+          eager: false,
+          shareScope: 'heavy-ui',
         },
       },
     }),
